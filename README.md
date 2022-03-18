@@ -1,5 +1,19 @@
 # Hangman-Game-Vanilia-JS
 
-Simple game created with: HTML5, CSS3, JS and Canvas.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-# Table of contents
+## General info
+This project is simple web browser game.
+	
+## Technologies
+Project is created with:
+* HTML5
+* CSS3
+* JS
+* Canvas
+	
+## Setup
+To run this project...
