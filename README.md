@@ -1,5 +1,7 @@
 # Hangman-Game-Vanilia-JS
 
+Click here to play: https://mateusz-ramotowski-poland.github.io/Hangman-Game-Vanilia-JS/
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
