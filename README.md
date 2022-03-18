@@ -17,7 +17,7 @@ Project is created with:
 * Canvas
 	
 ## Setup
-To run this project...
+
 
 ## Sample screenshots
 
