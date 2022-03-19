@@ -21,6 +21,7 @@ Project is created with:
 * CSS3
 * JS(ES6+)
 * Canvas API
+I was using chrome developer tools for testing my application.
 
 ## Features
 - The application shows messages for the player: number of lives/score, message about winning and losing.
