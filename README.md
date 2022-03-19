@@ -40,7 +40,7 @@ I was using chrome developer tools for testing my application.
 The project is complete.
 
 ## Acknowledgements
-This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used the hangman drawing part of the code of this project - I reworked it in my project to draw a similar drawing.
+This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used your part of the code used for drawing on canvas - I reworked it in my project to draw a similar drawing.
 
 ## Contact
 Created by Mateusz Ramotowski (mateusz.ramotowski.praca@gmail.com) - feel free to contact me!
