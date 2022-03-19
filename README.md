@@ -21,6 +21,7 @@ Project is created with:
 * CSS3
 * JS(ES6+)
 * Canvas API
+
 I was using chrome developer tools for testing my application.
 
 ## Features
