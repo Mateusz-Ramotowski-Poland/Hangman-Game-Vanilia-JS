@@ -14,10 +14,7 @@
 
 
 ## General Information
-This project is web browser game. I made to le
-Your goal is to guess the word from random category
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+This project is a browser game. In order to win the game you have to click on the buttons with letters/space that you think are in the guessing password. I created it to practice my programming skills. In this project, I focused on learning JS. That's why I only have one version - for computer screens. I didn't pay much attention to CSS and the layout of webpage.
 ## Technologies Used
 Project is created with:
 * HTML5
@@ -29,7 +26,7 @@ Project is created with:
 - The application shows messages for the player: number of lives/score, message about winning and losing.
 - When a player loses a life, part of the gallows or part of the hangman is drawn inside the canvas tag.
 - When you click a button with a letter/space, this button becomes inactive. You cannot click the same button twice in the same game.
-- The application randomizes the word for the player to guess. There are 4 word categories in the game, each category has 5 words.
+- The application randomizes the password for the player to guess. There are 4 password categories in the game, each category has 5 password. Password can contain a few words, example: puerto rico.
 - The application saves the top 3 high scores. Score = number of lives. After winning the game, if the player has a high enough score, the application will ask the player to enter his/her name. His name and result are recorded on the list.
 - The player can play again if the 'play again' button is pressed. After clicking the button: a new word to guess is chosen, the player has 10 lives again, the drawing inside the canvas is deleted, all letter/space buttons are active again.
 
