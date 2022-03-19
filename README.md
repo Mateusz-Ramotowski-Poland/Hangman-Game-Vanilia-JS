@@ -37,7 +37,7 @@ List the ready features here:
 Project is complete.
 
 ## Acknowledgements
-- This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used the hangman drawing part of the code of this project - I reworked it in my project to draw a similar drawing.
+This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used the hangman drawing part of the code of this project - I reworked it in my project to draw a similar drawing.
 
 ## Contact
 Created by Mateusz Ramotowski (mateusz.ramotowski.praca@gmail.com) - feel free to contact me!
