@@ -27,7 +27,7 @@ Project is created with:
 - When a player clicks a button with a letter/space which is not inside guessing password he: loses a life and part of the gallows or part of the hangman is drawn inside the canvas tag. When a player will have 0 lives he will lose.
 - When a player clicks a button with a letter/space which is inside the guessing password: this letter will be shown in the guessing word. When all the letters in the guessing word will show player wins.
 - When you click a button with a letter/space, this button becomes inactive. You cannot click the same button twice in the same game.
-- The application randomizes the password for the player to guess. There are 4 password categories in the game, each category has 5 passwords. Password can contain a few words, for example, password Puerto Rico.
+- The application choose random password for the player to guess. There are 4 password categories in the game, each category has 5 passwords. Password can contain a few words, for example, password Puerto Rico.
 - The application saves the top 3 high scores. Score = number of lives. After winning the game, if the player has a high enough score, the application will ask the player to enter his/her name. His name and result are recorded on the list.
 - The player can play again if the 'play again' button is pressed. After clicking the button: a new word to guess is chosen, the player has 10 lives again, the drawing inside the canvas is deleted, all letter/space buttons are active again.
 
