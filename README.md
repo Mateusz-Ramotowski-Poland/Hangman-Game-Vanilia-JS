@@ -14,7 +14,7 @@
 
 
 ## General Information
-This project is a browser game. In order to win the game, you have to click on the buttons with letters/space that you think are in the guessing password. I created it to practice my programming skills. In this project, I focused on learning JS. That's why I only have one version - for computer screens. I didn't pay much attention to CSS and the layout of a webpage.
+This project is a browser game. In order to win the game, you have to click on the buttons with letters/space that you think are in the guessing password. I created it to practice my programming skills. In this project, I focused on learning JS and chrome developer tools. That's why I only have one version - for computer screens. I didn't pay much attention to CSS and the layout of a webpage.
 ## Technologies Used
 Project is created with:
 * HTML5
