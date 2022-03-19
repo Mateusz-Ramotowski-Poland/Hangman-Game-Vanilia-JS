@@ -22,7 +22,7 @@ Your goal is to guess the word from random category
 Project is created with:
 * HTML5
 * CSS3
-* JS
+* JS(ES6+)
 * Canvas API
 
 ## Features
