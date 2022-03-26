@@ -37,10 +37,11 @@ I was using Chrome developer tools for testing my application.
 ![main view](https://user-images.githubusercontent.com/83215700/159060155-cb9e5ab1-cc34-478c-9198-e8d7bac335e6.PNG)
 
 ## Project Status
-The project is in progress. It doesn't work in the Firefox browser correctly. In the future, I want to work on this that app would work correctly on other browsers and also on mobiles. When I learn more about APIs I want to download passwords to guess from outer API.
+The project is in progress. All listed features work correctly on laptop/computer screen on Google Chrome browser. It doesn't work in the Firefox browser correctly. In the future, I want to work on this that app would work correctly on other browsers and also on mobiles. When I learn more about APIs I want to download passwords to guess from outer API.
 
 ## Acknowledgements
 This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used your part of the code used for drawing on canvas - I reworked it in my project to draw a similar drawing.
+I am thankful to the members of the polish group "HTML, CSS and JS: pierwsze kroki" ["HTML, CSS and JS: first steps"] on FB, for Your remarks.
 
 ## Contact
 Created by Mateusz Ramotowski (mateusz.ramotowski.praca@gmail.com) - feel free to contact me!
