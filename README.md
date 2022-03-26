@@ -14,7 +14,7 @@
 
 
 ## General Information
-This project is a browser game. In order to win the game, you have to click on the buttons with letters/space that you think are in the guessing password. I created it to practice my programming skills. In this project, I focused on learning JS and chrome developer tools. That's why I only have one version - for computer screens. I didn't pay much attention to CSS and the layout of a webpage.
+This project is a browser game. In order to win the game, you have to click on the buttons with letters/space that you think are in the guessing password. I created it to practice my programming skills. In this project, I focused on learning JS and chrome developer tools. That's why it's working the best on laptop/computer screen on Google Chrome browser. It doesn't work in the Firefox browser correctly. In the future, I want to work on this that app would work correctly on other browsers and also on mobiles. 
 ## Technologies Used
 Project is created with:
 * HTML5
@@ -37,7 +37,7 @@ I was using chrome developer tools for testing my application.
 ![main view](https://user-images.githubusercontent.com/83215700/159060155-cb9e5ab1-cc34-478c-9198-e8d7bac335e6.PNG)
 
 ## Project Status
-The project is complete.
+The project is in progress. It doesn't work in the Firefox browser correctly. In the future, I want to work on this that app would work correctly on other browsers and also on mobiles. When I learn more about APIs I want to download passwords to guess from outer API.
 
 ## Acknowledgements
 This project was inspired by https://megoh.github.io/projects/hangman/index.html. Thank you for the idea for the app. I also used your part of the code used for drawing on canvas - I reworked it in my project to draw a similar drawing.
