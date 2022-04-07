@@ -1,5 +1,5 @@
 # Hangman-Game-Vanilia-JS
-> You can play the hangman game in the web browser. It's my own project.
+> You can play the hangman game in the web browser. It's my own project. I made it from scratch.
 > Live demo [_here_](https://mateusz-ramotowski-poland.github.io/Hangman-Game-Vanilia-JS/). 
 
 ## Table of Contents
