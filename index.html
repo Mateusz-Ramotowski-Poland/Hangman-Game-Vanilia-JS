@@ -50,18 +50,15 @@
       </fieldset>
 
       <section class="down-side-of-webpage">
-        <section class="high-score-section">
-         <h3>
-           3 Best highscores
-         </h3>
-         <p class="high-score-area">1:</p>
-         <p class="high-score-area">2:</p>
-         <p class="high-score-area">3:</p>
-        </section>
+        <section>
+          <canvas width="150" height="150">
+            drawing a hangman after losing live <!-- for older browsers -->
+          </canvas>
+       </section>
 
        <section>
           <h3>
-           The chosen category is <span class="guess-category">colors</span>.
+           Category: <span class="guess-category">colors</span>.
           </h3>
           <p class="guess-word">------</p>
           <h3 class="information-lives-area">
@@ -71,10 +68,13 @@
           <button class="play-button">Play again!</button>
        </section>
 
-       <section>
-          <canvas width="150" height="150">
-            drawing a hangman after losing live <!-- for older browsers -->
-          </canvas>
+       <section class="high-score-section">
+        <h3>
+          3 Best highscores
+        </h3>
+        <p class="high-score-area">1:</p>
+        <p class="high-score-area">2:</p>
+        <p class="high-score-area">3:</p>
        </section>
       </section>
 

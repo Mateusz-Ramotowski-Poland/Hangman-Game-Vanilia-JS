@@ -102,13 +102,8 @@ function returnPseudoRandomWordToGuessAndChangeCategoryInDOM() {
   const categories = {
     categories: ["cities", "countries", "rivers", "languages"],
     cities: ["london", "warsaw", "gizycko", "berlin", "puerto rico"],
-    countries: [
-      "poland",
-      "germany",
-      "russia",
-      "slovakia",
-      "united states of america",
-    ],
+    // prettier-ignore
+    countries: ["poland", "germany", "russia", "slovakia", "united states of america"],
     rivers: ["wisla", "odra", "motlawa", "nile", "amazon"],
     languages: ["polish", "english", "portuguese", "russian", "french"],
   };
@@ -371,4 +366,3 @@ wordToGuess = returnPseudoRandomWordToGuessAndChangeCategoryInDOM();
 numberOfLives = 10;
 LivesArea.textContent = numberOfLives;
 guessWordArea.textContent = returnDashesWordToGuess(wordToGuess);
-
