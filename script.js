@@ -19,18 +19,7 @@ let drawingHangmanFunctionsCounter = 0;
 const ctx = canvas.getContext("2d");
 ctx.strokeStyle = "white";
 ctx.lineWidth = 1;
-const drawingHangmanFunctions = [
-  foundation,
-  pile,
-  upperBoard,
-  rope,
-  head,
-  stomach,
-  leftHand,
-  rightHand,
-  leftLeg,
-  rightLeg,
-];
+const drawingHangmanFunctions = [foundation, pile, upperBoard, rope, head, stomach, leftHand, rightHand, leftLeg, rightLeg];
 
 function foundation() {
   ctx.beginPath();
@@ -130,11 +119,11 @@ function returnWhereAndHowManyTimesInWordToGuessExistSameLetterOrSpace(event) {
   };
   while (indexOfChar !== -1) {
     if (searchedLetter.counterOfRepeatings === 0) {
-      indexOfChar = wordToGuess.indexOf(event.path[0].innerHTML, 0); //event.path[0].innerHTML - string, letter/space(clicked button)
+      indexOfChar = wordToGuess.indexOf(event.target.innerHTML, 0); //event.target.innerHTML - string, letter/space(clicked button)
     } else {
       indexOfChar = wordToGuess.indexOf(
         // if it won't find anything indexOf will return -1
-        event.path[0].innerHTML,
+        event.target.innerHTML,
         indexOfChar + 1
       );
     }
@@ -149,8 +138,8 @@ function returnWhichButtonWasClicked(event) {
   let whichButtonWasPushed;
   for (const clickedButton of buttonsToPLay) {
     //this loop do: find html tag with concrete inner text
-    if (clickedButton.textContent.includes(event.path[0].innerHTML)) {
-      //event.path[0].innerHTML - string, letter/space(clicked button)
+    if (clickedButton.textContent.includes(event.target.innerHTML)) {
+      //event.target.innerHTML - string, letter/space(clicked button)
       whichButtonWasPushed = clickedButton;
       break;
     }
@@ -167,9 +156,7 @@ function disableClickedButtonInDOM(clickedButton) {
   clickedButton.classList.remove("letter-space-to-guess");
   clickedButton.disabled = true;
 }
-function changeNumberOfLivesAfterClickingWrongLetterOrSpaceVariableAndDOM(
-  searchedLetter
-) {
+function changeNumberOfLivesAfterClickingWrongLetterOrSpaceVariableAndDOM(searchedLetter) {
   if (searchedLetter.counterOfRepeatings === 0 && numberOfLives > 0) {
     numberOfLives--;
     LivesArea.textContent = numberOfLives.toString();
@@ -228,21 +215,13 @@ function getNameOfPlayerFromUser() {
   let doesItHaveDash;
   let playerName;
   do {
-    playerName = prompt(
-      "Congratulation! You won and you have very high score. What's your name?"
-    );
+    playerName = prompt("Congratulation! You won and you have very high score. What's your name?");
     doesItHaveDash = playerName.indexOf("-");
   } while (!(playerName !== "" && doesItHaveDash === -1));
   return playerName;
 }
-function saveCurrentScoreInHighScoresInDOM(
-  currentScore,
-  whichHighScore,
-  playerName
-) {
-  highScoresArea[
-    whichHighScore - 1
-  ].innerText = `${whichHighScore}: ${playerName} - ${currentScore}`;
+function saveCurrentScoreInHighScoresInDOM(currentScore, whichHighScore, playerName) {
+  highScoresArea[whichHighScore - 1].innerText = `${whichHighScore}: ${playerName} - ${currentScore}`;
 }
 function highScoreFunctionality(currentScore) {
   const highScores = [];
@@ -265,11 +244,7 @@ function highScoreFunctionality(currentScore) {
         if (currentScore > highScores[0]) {
           if (highScores[0] !== null) {
             if (highScores[1] !== null) {
-              saveCurrentScoreInHighScoresInDOM(
-                highScores[1],
-                3,
-                playerNames[1]
-              );
+              saveCurrentScoreInHighScoresInDOM(highScores[1], 3, playerNames[1]);
             }
             saveCurrentScoreInHighScoresInDOM(highScores[0], 2, playerNames[0]);
           }
@@ -295,10 +270,7 @@ function changeDOMYouWonFunctionality(returnedStringWordToGuess) {
     highScoreFunctionality(currentScore);
   }
 }
-function returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(
-  searchedLetter,
-  event
-) {
+function returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(searchedLetter, event) {
   const stringWordToGuess = guessWordArea.textContent;
   let returnedStringWordToGuess = "";
   let arrayWordToGuess = []; // stringWordToGuess change to array form
@@ -307,8 +279,7 @@ function returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(
       arrayWordToGuess.push(sign);
     }
     for (let m = 0; m < searchedLetter.indexesArray.length; m++) {
-      arrayWordToGuess[searchedLetter.indexesArray[m]] =
-        event.path[0].innerHTML; //event.path[0].innerHTML - string, letter/space(clicked button)
+      arrayWordToGuess[searchedLetter.indexesArray[m]] = event.target.innerHTML; //event.target.innerHTML - string, letter/space(clicked button)
     }
     // above change every "-" with letter
     for (let n = 0; n < arrayWordToGuess.length; n++) {
@@ -321,19 +292,13 @@ function returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(
   return returnedStringWordToGuess;
 }
 function allFunctionalitiesLetterOrSpaceButton(event) {
+  console.log(event.target);
   let whichButtonWasPushed;
   let searchedLetter;
   let returnedStringWordToGuess = ""; //stringWordToGuess changed (dashes replaced with lettters) and returned to DOM
-  searchedLetter =
-    returnWhereAndHowManyTimesInWordToGuessExistSameLetterOrSpace(event);
-  returnedStringWordToGuess =
-    returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(
-      searchedLetter,
-      event
-    );
-  changeNumberOfLivesAfterClickingWrongLetterOrSpaceVariableAndDOM(
-    searchedLetter
-  );
+  searchedLetter = returnWhereAndHowManyTimesInWordToGuessExistSameLetterOrSpace(event);
+  returnedStringWordToGuess = returnChangedstringWordToGuessSoReplaceDashesWithClickedLetterIfIsGood(searchedLetter, event);
+  changeNumberOfLivesAfterClickingWrongLetterOrSpaceVariableAndDOM(searchedLetter);
   whichButtonWasPushed = returnWhichButtonWasClicked(event);
   disableClickedButtonInDOM(whichButtonWasPushed);
   changeDOMYouLooseFunctionality();
